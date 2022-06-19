@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+
+
+body {
+  background: #fff;
+  font-family: "Londrina Outline", sans-serif;
+  background-image: url("http://bgfons.com/upload/wood%20_texture3.jpg");
+   }
+
+
+ul {
+  margin: 1;
+  padding: 1;
+  list-style: none; }
+
+h1 {
+  font-family: "Londrina Outline", sans-serif;
+  color: white;
+  line-height: 0.9;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  width:450px;
+}
+
+.player-names {
+  margin: 25px 0;
+}
+.player-names label{
+  color: #fff;
+  font-weight: bold;
+}
+
+.player-names input {
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+input#player-1-name {
+  margin-right: 15px;
+}
+
+.player-names input:focus {
+  border-radius: 2px;
+  background-color: #ddd;
+}
+
+.player1-name, .player2-name {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.player1-name {
+  top: 80px;
+  left: 10%;
+}
+
+.player2-name {
+  top: 80px;
+  right: 10%;
+}
+
+.player1-wins, .player2-wins{
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.player1-wins {
+  top: 135px;
+  left: 10%;
+}
+
+.player2-wins {
+  top: 135px;
+  right: 10%;
+}
+.button {
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+     width: 15%;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    margin:11px;
+}
+
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid ;
+}
+
+.button:hover {
+    background-color: #D1FF00;
+    color: white;
+}
+
+.btn-choice {
+  margin-top: 25px;
+  padding: .8em 1.5em;
+}
+
+.screen {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%; }
+  .screen header {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+    transform: translatey(-50%); }
+  .screen h1 {
+    color: #F4F4F5; }
+  .screen-start {
+     background-image: url("http://bgfons.com/upload/wood%20_texture3.jpg");
+       background-color: #cccccc;}
+    .screen-start h1 {
+      font-size: 96px; }
+    .screen-start .button {
+      color: #000; }
+    .screen-start h1 + .button {
+      margin-top: 80px; }
+  .screen-win p {
+    font-size: 96px;
+    font-weight: 700;
+    color: #fff;
+    position: relative; }
+    .screen-win p:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      color: #000;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 0;
+      z-index: -1; }
+  .screen-win-tie {
+    background: #54D17A; }
+  .screen-win-one {
+    background: #FFA000; }
+    .screen-win-one .button {
+      color: #000; }
+    .screen-win-one p:before {
+      content: "o";
+      top: 1.75rem; }
+  .screen-win-two {
+    background: #3688C3; }
+    .screen-win-two .button {
+      color: #000; }
+    .screen-win-two p:before {
+      content: "×";
+      top: 4.5rem; }
+
+.board {
+  padding-top: 16px;
+   background-image: ("https://wallpapercave.com/wp/wp8499131.jpg");}
+  .board h1 {
+    margin-top: 4.8px; }
+.players {
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+  width: 35%;
+  padding: 20px 0 16px;
+  outline: 1px solid #ccc;
+  transition: 1s; }
+  .players svg g {
+    fill: rgba(0, 0, 0, 0.1); }
+  .players:first-child {
+    left: 2.5%; }
+  .players:last-child {
+    right: 2.5%; }
+  .players-turn {
+    outline: none;
+  }
+  #player1.active svg g, #player2.active svg g {
+    fill: #fff; }
+  #player1.active {
+    background: #FFA000; }
+  #player2.active {
+    background: #3688C3; }
+
+
+
+.boxes {
+  width: 480px;
+  margin: 48px auto 0; }
+  .boxes .box {
+    background: #EFEFEF;
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 1.75em;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center center;}
+    .boxes .box:nth-child(3n) {
+      margin-right: 0; }
+    .boxes .box-filled-1 {
+      background-color: #FFA000;
+      background-image: url(C:\Users\Artem\WebstormProjects\KrestikiNoliki\img\o.svg); }
+    .boxes .box-filled-2 {
+      background-color: #3688C3;
+      background-image: url(C:\Users\Artem\WebstormProjects\KrestikiNoliki\img\x.svg); }
